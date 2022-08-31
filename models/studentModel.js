@@ -14,7 +14,7 @@ const studentSchema = new mongoose.Schema({
   college_id: {
     type: Number,
     required: true,
-    unique: true,
+    ref: "College",
   },
   year_of_batch: {
     type: Number,

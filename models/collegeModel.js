@@ -43,5 +43,11 @@ const collegeSchema = new mongoose.Schema({
   ],
 });
 
-const College = mongoose.model("Student", collegeSchema);
+collegeSchema.virtual("students", {
+  ref: "Student",
+  localField: "id",
+  foreignField: "college_id",
+});
+
+const College = mongoose.model("College", collegeSchema);
 module.exports = College;

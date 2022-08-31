@@ -10,6 +10,8 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 );
 
+const PORT = process.env.PORT || 5000;
+
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
