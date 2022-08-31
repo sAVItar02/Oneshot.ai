@@ -14,3 +14,7 @@ npm run start
 npm run dev 
 ```
 
+#### This repository id deployed on Heroku
+```sh
+https://oneshotai-task.herokuapp.com/
+```
